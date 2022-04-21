@@ -100,7 +100,7 @@ scenarios:
               as: "response_country"
       - log: "There is a {{probability}}% chance that {{FirstName}} {{LastName}} is from {{response_country}}"
 
-  # Store: artillery run -o reports/ta_simple -k src/test/TA_simple.yml
-  # Report: artillery report reports/ta_simple
+  # Store: artillery run -o reports/TA_sandbox src/test/TA_sandbox.yml
+  # Report: artillery report reports/TA_sandbox
 
   # report viewer tool needs Node 14.18 or lower. Bug in Artillery 2.0
