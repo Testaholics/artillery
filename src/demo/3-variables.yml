@@ -22,3 +22,5 @@ scenarios:
       - log: "There is a {{response_probability}} in 1 change that {{FirstName}} is a {{response_gender}}"
 
   # Run:    artillery run -q src/demo/3-variables.yml
+
+  # INFO: https://www.artillery.io/docs/guides/guides/test-script-reference#variables---inline-variables

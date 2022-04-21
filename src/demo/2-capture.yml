@@ -14,3 +14,5 @@ scenarios:
       - log: "There is a {{response_probability}} in 1 change that David is a {{response_gender}}"
 
   # Run:    artillery run -q src/demo/2-capture.yml
+
+  # INFO: https://www.artillery.io/docs/guides/guides/http-reference#syntax

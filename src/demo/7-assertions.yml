@@ -17,4 +17,6 @@ scenarios:
           - contentType: json
           - hasProperty: "gender"
 
-  # Run: artillery run -q src/demo/7-assertions.yml
+# Run: artillery run -q src/demo/7-assertions.yml
+
+# INFO: https://www.artillery.io/docs/guides/plugins/plugin-expectations-assertions#expectations

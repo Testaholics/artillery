@@ -22,3 +22,5 @@ scenarios:
 
   # Run: artillery run -o reports/report-weighing src/demo/6-weighing.yml
   # Generate report: artillery report reports/report-weighing.json
+
+  # INFO: https://www.artillery.io/docs/guides/guides/test-script-reference#scenarios-section
