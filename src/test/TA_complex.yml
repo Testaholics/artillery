@@ -49,8 +49,9 @@ config:
       skipHeader: true
 
   processor: "../utils/helper-functions.js"
-scenarios:
-  - flow:
+
+before:
+  flow:
     # Get a token
     - post:
         url: "/auth"
@@ -66,6 +67,8 @@ scenarios:
             as: token
     # - log: "Token: {{token}}"
 
+scenarios:
+  - flow:
     # Create a booking
     - function: "testData"
     - post:
@@ -203,7 +206,7 @@ scenarios:
             - "Anonymous"
     # - log: "Booking {{booking[0].bookingid}} updated"
 
-  # Run functional test: artillery run -q src/test/restfulBooker.yml -e functional
+  # Run functional test: artillery run -q src/test/TA_complex.yml -e functional
 
-  # Run load test: artillery run -o reports/restfulBooker src/test/restfulBooker.yml -e load
-  # Report: artillery report reports/restfulBooker
+  # Run load test: artillery run -o reports/TA_complex src/test/TA_complex.yml -e load
+  # Report: artillery report reports/TA_complex
